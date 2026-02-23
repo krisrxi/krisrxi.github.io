@@ -125,21 +125,6 @@ footer {
     margin-top: 60px;
 }
 
-@media (max-width: 992px) {
-    .content-row {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .image-side img {
-        width: 100%; /* Image scales down on smaller screens */
-        height: auto;
-        max-width: 500px;
-    }
-}
-
-/* Hide Hamburger by default */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -154,16 +139,33 @@ footer {
     transition: 0.3s;
 }
 
-/* Mobile Styles (Screen width < 768px) */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .text-side h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-side p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .content-wrapper {
+        padding: 0 20px;
+        margin-top: 100px;
+    }
+
     .menu-toggle {
-        display: flex; /* Show hamburger */
+        display: flex;
     }
 
     .nav-links {
         position: absolute;
-        top: 80px; /* Height of your navbar */
-        right: -100%; /* Hide it off-screen to the right */
+        top: 80px; 
+        right: -100%; 
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -173,7 +175,6 @@ footer {
         padding: 20px 0;
     }
 
-    /* When the menu has the 'active' class, slide it in */
     .nav-links.active {
         right: 0;
     }
