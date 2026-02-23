@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Rubiano - VeriComms</title>
+    <link rel="stylesheet" href="style-page.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <span class="nav-name"><a href="index.html">kris</a></span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:krubianodesign@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('#nav-list');
+        menu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menu.classList.toggle('is-active');
+        });
+    </script>
+    
+        <section class="intro">
+            <h1>VeriComms</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <p>Science to People is building VeriComms, a purpose-built LLM platform designed to maximize the impact of public health communicators working under tight deadlines
+                    and budgets. Functioning as a content assistant and trusted thought partner, VeriComms enables the production of high-quality, science-based messaging
+                    in a fraction of the time. By combining a domain-specific architecture grounded in vetted medical sources and human-in-the-loop safeguards,
+                    this tool ensures that teams can scale their output rapidly without sacrificing scientific integrity or trust.</p>
+
+                <div style="display: flex; gap: 20px; margin-top: 40px;">
+                    <div style="flex: 1; margin-top: 100px;">
+                        I operated as the lead Solutions Architect and embedded technical partner, influencing system-level decisions that informed deliverables across multiple teams.
+                        My insight ensured that architectural considerations were accounted for at every stage, creating a solid foundation for successful MVP.
+                        I provided holistic QA and system modeling, ensuring the product remained viable despite developer-side blockers.
+                    </div>
+                <div style="flex: 1;">
+                    <img src="vericomms/landing.png" height="450" alt="Landing Page">
+                </div>
+            </div>
+        
+                <div style="display: flex; gap: 20px; margin-top: 40px;">
+                    <div style="flex: 1;">
+                        <img src="vericomms/content-studio.png" height="400" alt="Content Studio">
+                    </div>
+                <div style="flex: 1; margin-top: 50px;">
+ <strong>Contributions and Key Insights:</strong>
+                        <ul>
+                            <li>Bridged the knowledge gap for UX/Product teams by translating the developer tech stack and machine learning processes, enabling them to design features that better leverage impact.</li>
+                            <li>Advised against generative imagery to maintain scientific accuracy, prevent misinformation, and uphold product credibility.</li>
+                            <li>Supported UX research via data collection and provided multidisciplinary feedback on prototype design and functionality.</li>
+                        </ul>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; margin-top: 40px;">
+                    <div style="flex: 1; margin-top: 50px;">
+                        <strong>Outcomes:</strong>
+                        <ul>
+                            <li>Founder leveraged our user persona and market positioning insights to strengthen their narrative,
+                                directly supporting conversations with funders and institutional partners.</li>
+                            <li>Utilization of journey mapping and a high-fidelity prototype streamlined the feature prioritization and provided actionable UX recommendations
+                                for the current development build.</li>
+                            <li>Validated hypothesis that communicators seek AI to simplify science documentation rather than replace creativity, 
+                            serving as the central pillar of their product strategy.</li>
+                    </div>
+                <div style="flex: 1;">
+                    <img src="vericomms/sources.png" height="450" alt="Sources and Citations">
+                </div>
+            </div>
+
+
+                        </ul>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

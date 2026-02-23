@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Rubiano - About</title>
+    <link rel="stylesheet" href="style-page.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <span class="nav-name"><a href="index.html">kris</a></span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:krubianodesign@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('#nav-list');
+        menu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menu.classList.toggle('is-active');
+        });
+    </script>
+    
+        <section class="intro">
+            <h1>About</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side"><p>My professional experience spans from design to data, creatives to coding.
+                This includes cross-functional collaboration, vocal advocacy for solutions, and ongoing curiosity.
+                I'm also really into giving back to my communities as I went from attendee to local organizer for
+                <a href="https://codeandcoffee.org/" target="new" style="color: inherit; text-decoration: underline;">Code &amp; Coffee</a>,
+                volunteering for <a href="https://schoolofdata.nyc/" target="new" style="color: inherit; text-decoration: underline;">NYC's School of Data</a>,
+                and an Event Navigator for <a href="https://community.sonarsource.com/" target="new" style="color: inherit; text-decoration: underline;">Sonar</a>.</p>
+                <p>Outside of tech, I'm a second degree black belt martial artist and am told that I have really nice handwriting.</p>
+                <p><a href="https://github.com/krisrxi" target="new">GitHub</a> &nbsp; <a href="https://www.linkedin.com/in/krisrubiano/" target="new">LinkedIn</a></p>
+                <p style="margin-top: 40px;"></p>
+<strong>Tools</strong>
+<ul>
+    <li>Data: SQL, Python, Tableau, NumPy, pandas, scikit-learn, Scrapy, matplotlib, seaborn, GitHub, Google Sheets, Microsoft Excel.</li>
+    <li>UI/UX: Figma, XD, Miro.</li>
+    <li>Graphic Design: Photoshop, InDesign, Illustrator, Acrobat, Express, Canva.</li>
+    <li>Web Design: Visual Studio Code, HTML, CSS, JavaScript, WordPress.</li>
+    <li>Photography: DSLR, studio equipment.</li>
+    <li>Email Marketing: MailChimp.</li>
+    <li>Audio and Video Editing: REAPER, Premiere Pro.</li>
+</ul><br>
+<strong>Skills</strong>
+<ul>
+    <li>Data: Data cleaning, exploratory data analysis (EDA), data visualization, natural language processing (NLP), machine learning, neural networks.</li>
+    <li>Design: Typography, photography and retouching, branding, logo design, web design, wireframing, editorial design, book design, marketing, packaging, copywriting, advertising concepts and design.</li>
+                </ul>
+            </div>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

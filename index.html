@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Rubiano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <span class="nav-name"><a href="index.html">kris</a></span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:krubianodesign@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('#nav-list');
+        menu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menu.classList.toggle('is-active');
+        });
+    </script>
+    
+        <section class="intro">
+            <h1>Hey, I'm Kris Rubiano, a data analyst and scientist with an additional background in user experience, graphic design, and community development.</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <h2><a href="vericomms.html">VeriComms</a></h2>
+                <p>Guided the technical evolution for an LLM-driven tool, ensuring public health communicators receive scientifically accurate content through rigorous model auditing and citation verification.</p>
+            </div>
+            <div class="image-side">
+                <a href="vericomms.html"><img src="vericomms.png" alt="VeriComms"></a>
+            </div>
+        </section>
+        
+        <section class="content-row">
+            <div class="text-side">
+                <h2><a href="https://public.tableau.com/app/profile/kris.rubiano/viz/VeryShortIntroductions-v2update/Dashboard" target="new">Very Short Introductions Data Viz</a></h2>
+                <p>Tableau dashboard: Are the Very Short Introductions books as diverse as they claim to be?</p>
+            </div>
+            <div class="image-side">
+                <a href="https://public.tableau.com/app/profile/kris.rubiano/viz/VeryShortIntroductions-v2update/Dashboard" target="new">
+                <img src="vsi.png" alt="Very Short Introductions"></a>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <h2><a href="https://www.newyorkcodeandcoffee.com/" target="new">New York Code &amp; Coffee</a></h2>
+                <p>Organizer and data coordinator for one of the largest tech meetups in NYC.</p>
+            </div>
+            <div class="image-side">
+                <a href="https://www.newyorkcodeandcoffee.com/" target="new"><img src="nycc.png" alt="New York Code & Coffee"></a>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <h2><a href="https://opencivic.tech/blog/ctc-2025-fz58c" target="new">Civic Tech Camp</a></h2>
+                <p>Lead project scoping and technical integrity for a visualization hackathon, leveraging open data to transform civic engagement into impactful, real-world analytical solutions.</p>
+            </div>
+            <div class="image-side">
+                <a href="https://opencivic.tech/blog/ctc-2025-fz58c" target="new"><img src="cvc.png" alt="Civic Tech Camp"></a>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <h2><a href="calliope.html">Calliope</a></h2>
+                <p>Case study: Prototype that streamlines the NYC museum experience by syncing personalized exhibition feeds to a calendar.</p>
+            </div>
+            <div class="image-side">
+                <a href="calliope.html"><img src="calliope.png" alt="Calliope"></a>
+            </div>
+        </section>
+
+            <section class="content-row">
+            <div class="text-side">
+                <h2><a href="graphicdesign.html">Graphic Design</a></h2>
+                <p>Collection of previous in-house work and commissions.</p>
+            </div>
+            <div class="image-side">
+                <a href="graphicdesign.html"><img src="graphicdesign.png" alt="Graphic Design"></a>
+            </div>
+        </section>
+
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

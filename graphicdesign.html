@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Rubiano - Graphic Design</title>
+    <link rel="stylesheet" href="style-page.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <span class="nav-name"><a href="index.html">kris</a></span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:krubianodesign@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('#nav-list');
+        menu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menu.classList.toggle('is-active');
+        });
+    </script>
+    
+        <section class="intro">
+            <h1>Graphic Design</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                    <p>In-House</p>Work for a furnishing company. This includes: interior photography, product photography, print materials, and marketing images.</p>
+                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                        <img src="graphicdesign/Gift-Card.jpg" height="300" alt="Gift Card"><img src="graphicdesign/Mouille-Style-Five-Arm.jpg" height="450" alt="Interior Photography">
+                        <img src="graphicdesign/One-Madison-LED-Mirror.jpg" height="700" alt="Interior Photography">
+                        <img src="graphicdesign/Custom-Mouille-Style-Flame.jpg" height="700" alt="Product Photography">
+                        <img src="graphicdesign/City-T-Pull.jpg" height="450" alt="Product Photography"><img src="graphicdesign/Custom-Cargo-Pendant.jpg" height="450" alt="Product Photography">
+                    </div>
+            <p style="margin-top: 40px;">Cider, logo and logotype.</p>This design is for a tool that streamlines the submission process for builds being uploaded to the Apple App Store.
+            <p><img src="graphicdesign/Cider-Final.png" width="400" alt="Cider"><img src="graphicdesign/Cider-Unsplash.jpg" width="500" alt="Cider"></p>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

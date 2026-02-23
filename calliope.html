@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Rubiano - Calliope</title>
+    <link rel="stylesheet" href="style-page.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <span class="nav-name"><a href="index.html">kris</a></span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:krubianodesign@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('#nav-list');
+        menu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menu.classList.toggle('is-active');
+        });
+    </script>
+    
+        <section class="intro">
+            <h1>Calliope, a museum exhibition app</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                    <a href="https://xd.adobe.com/view/24a20c1d-1a54-4235-be7b-baa5a214061d-71f1/" target="new"><img src="calliope/Calliope.jpg" width="900" alt="Calliope"><img src="calliope/iPhone-Launch.png" height="505" alt="Launch"></a>
+                <p>Museum goers of New York City need a calendar feed of exhibitions that interest them because they want to schedule more efficiently.
+                <p>Research:</p>
+                    <ul>
+                        <li>Why do users go to museums?</li>
+                        <li>How much time did they spend at a museum? Why that amount of time?</li>
+                        <li>When it came to scheduled exhibitions, how did they find out about them? Exhibitions in the past, current, upcoming?</li>
+                    </ul>
+                <p>Methods:</p>
+                <ul>
+                    <li>User Interviews: I conducted 7 interviews with New York City residents. A few of the research questions as seen above were asked.</li>
+                    <li>Affinity Mapping: Organized observations and patterns.</li>
+                    <img src="calliope/Affinity-Map.png" width="800" alt="Affinity Map">
+                    <li>Persona: I created Casey, who works a full-time job and many of her museum visits were over the weekends due to time constraints.</li>
+                    <img src="calliope/Persona.png" width="800" alt="Persona">
+                    <li>Competitive Research: It was noted that none of the platforms had the ability to filter by interests very well.</li></ul>
+                <p>Synthesis:</p>
+                <ul>
+                    <li>User Flow</li>
+                    <img src="calliope/User-Flow.jpg" width="800" alt="User Flow">
+                    <li>Feature Prioritization</li>
+                    <img src="calliope/Feature.png" width="800" alt="Feature Prioritization">
+                    </ul>
+                <p>Prototyping and Usability Testing:</p>
+                    I deviated from my paper prototype when creating the low fidelity wireframes as I realized that many of the users that I interviewed had iPhones.
+                    I then focused on making the app more intuitive for the iOS environment.
+                    And while I received positive comments on the design, a pain point was feedback on the search results page, which I revised in the prototype.
+                <p style="margin: 40px 0;"><div style="display: flex; align-items: center; gap: 40px;">
+                <a href="https://xd.adobe.com/view/24a20c1d-1a54-4235-be7b-baa5a214061d-71f1/" target="new"><img src="calliope/iPhone-Launch.png" height="400" alt="Launch Screen"><img src="calliope/iPhone-Apps.png" height="400" alt="Apps Screen"><img src="calliope/iPhone-Screen.png" height="400" alt="Screen"></a>
+                <p>Click the images to the left<br>to view the Adobe XD prototype.</p>
+                </div></p>
+                <p>What's next?</p>
+                <ul>
+                    <li>More usability testing for recent prototype.</li>
+                    <li>Refine and redesign the search feature, i.e. autofill function.</li>
+                    <li>Determine the features needed for the website version.</li>
+                    <li>More testing!</li>
+                </ul>
+            </div>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
