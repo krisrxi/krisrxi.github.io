@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kris Rubiano - VeriComms</title>
-    <link rel="stylesheet" href="style-page.css">
+    <title>[my name] - VeriComms</title>
+    <link rel="stylesheet" href="style-page-2.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
         <div class="header-container">
             <div class="logo-area">
                 <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
-                <span class="nav-name"><a href="index.html">kris</a></span>
+                <span class="nav-name"><a href="index.html">[my name]</a></span>
             </div>
 
             <div class="menu-toggle" id="mobile-menu">
@@ -25,14 +25,151 @@
                 <ul class="nav-links" id="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="https://github.com/krisrxi">Contact</a></li>
+                    <li><a href="https://github.com/">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="content-wrapper">
-        <script>
+
+        <section class="intro">
+            <h1>VeriComms</h1>
+        </section>
+
+        <section class="content-row">
+            <div class="text-side">
+                <p>Science to People is building VeriComms, an LLM-powered platform for public health communicators working under tight deadlines and budgets.
+                    Grounded in vetted scientific sources, VeriComms acts as a content assistant and thought partner, helping communicators research, draft,
+                    and verify science-based messaging more efficiently while keeping their own expertise at the center.<br><br>
+                    As the sole Solutions Architect and technical lead for Phase 2 on a cross-functional team, I helped ground our research and design decisions in how the
+                    underlying LLM actually behaves.</p>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2>The Problem</h2>
+                        Our research showed that public health communicators won't rely on an AI response unless they can verify that reliable sources back it.
+                        Their messaging is often sensitive and aimed at culturally diverse audiences, and it typically passes through multiple rounds of expert,
+                        managerial, and compliance review before it's published. An AI tool for this audience has to support verification and collaboration, not
+                        just fast content generation.<br><br>
+                        From the technical side, that raised a question: what could the underlying LLM realistically support, and where would the design need to
+                        compensate?
+                    </div>
+                    <div class="flex-col">
+                        <img src="vericomms/landing.png" alt="Landing Page" class="lightbox-trigger featured-image" onclick="document.getElementById('lb-landing').showModal()">
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <img src="vericomms/output.png" alt="Output" class="lightbox-trigger" onclick="document.getElementById('lb-output').showModal()">
+                    </div>
+                    <div class="flex-col mt-0">
+                        <h2>My Role</h2>
+                        Early in the project, the client pivoted from a general-purpose content tool for social media health and science influencers to a white-label
+                        product for public health organizations, prompted by interest from a first potential customer. I served as Solutions Architect and technical
+                        lead, working alongside researchers, UX designers, product strategists, and writers to keep our decisions grounded in how the underlying LLM
+                        actually behaved.
+                        <br><br>
+                        I tested the client's existing experimental LLM, evaluating how prompts specifying audience education level and scientific terminology shaped
+                        its output, and flagged feasibility constraints such as multilingual output so research and design decisions stayed grounded in how the system
+                        behaved. I also estimated the technical effort behind proposed features, including an importance-versus-effort matrix that showed translation was
+                        highly valued by users but demanding to build.
+                        <br><br>
+                        To make the technical side accessible, I created architecture visuals and logic flows, including a walkthrough of the client's tech stack,
+                        and helped teammates new to AI understand LLM and machine learning fundamentals so the whole team could make informed decisions.
+                        <br><br>
+                        With limited access to the client's developers, I focused on what I could evaluate directly: the behavior of the experimental model.
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <img src="vericomms/answer.png" alt="Answer" class="lightbox-trigger" onclick="document.getElementById('lb-answer').showModal()">
+                    </div>
+                    <div class="flex-col">
+                        <img src="vericomms/content-studio.png" alt="Content Studio" class="lightbox-trigger" onclick="document.getElementById('lb-studio').showModal()">
+                    </div>
+                    <div class="flex-col">
+                        <img src="vericomms/status.png" alt="Status" class="lightbox-trigger" onclick="document.getElementById('lb-status').showModal()">
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col mt-0">
+                        <h2>Contributions</h2>
+                        <ul>
+                            <li>Translated the technical side of the product for a team new to AI through architecture visuals, logic flows, and coaching on LLM and ML fundamentals.</li>
+                            <li>Tested the client's existing experimental LLM, exploring how prompts specifying audience education level and scientific terminology shaped its output, to give researchers and designers a technical foundation for prototype iterations.</li>
+                            <li>Built an importance-versus-effort matrix to help the team weigh trade-offs when prioritizing features.</li>
+                            <li>Advised limiting AI-generated imagery to basic shapes and graphics rather than generated photos, to protect scientific accuracy and the platform's credibility. This echoed feedback from interviewed participants who felt generated photos didn't reflect their audience and came across as inauthentic.</li>
+                            <li>Gave technical feedback on prototype design and functionality.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-col mt-0">
+                        <h2>Key Insights</h2>
+                        <ul>
+                            <li>Translation needed deliberate scoping. Users valued it highly, but it would also be among the most demanding features to build, which made it one of the clearest tensions in the project.</li>
+                            <li>Audience tailoring could be steered through the prompt itself, such as education level and degree of scientific wording, which fit how communicators naturally approached the tool.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2>Outcomes</h2>
+                        <ul>
+                            <li>The client used the team's research and designs in a pitch deck to potential investors, and later announced a committed donor and numerous NGO collaborators.</li>
+                            <li>The interactive prototype gave the client a clearer picture of user needs, informing product scoping and feature prioritization, and UX recommendations were shared with the contracted developers for the current build.</li>
+                            <li>The team defined a validated direction for a scalable, white-labeled product, grounded in research showing that communicators want AI to assist with drafting while their own expertise shapes the final message.</li>
+                            <li>The team earned a 95% score on the final client satisfaction survey, up from Phase 1.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-col">
+                        <img src="vericomms/output.png" alt="Output" class="lightbox-trigger featured-image" onclick="document.getElementById('lb-landing').showModal()">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [my name]. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightboxes -->
+    <dialog id="lb-landing" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-landing').close()">&times;</button>
+        <img src="vericomms/landing.png" alt="Landing Page">
+    </dialog>
+
+    <dialog id="lb-output" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-output').close()">&times;</button>
+        <img src="vericomms/output.png" alt="Output">
+    </dialog>
+
+    <dialog id="lb-answer" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-answer').close()">&times;</button>
+        <img src="vericomms/answer.png" alt="Answer">
+    </dialog>
+
+    <dialog id="lb-studio" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-studio').close()">&times;</button>
+        <img src="vericomms/content-studio.png" alt="Content Studio">
+    </dialog>
+
+    <dialog id="lb-status" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-status').close()">&times;</button>
+        <img src="vericomms/status.png" alt="Status">
+    </dialog>
+
+    <dialog id="lb-sources" class="lightbox">
+        <button class="lightbox-close" onclick="document.getElementById('lb-sources').close()">&times;</button>
+        <img src="vericomms/sources.png" alt="Sources and Citations">
+    </dialog>
+
+    <script>
         const menu = document.querySelector('#mobile-menu');
         const navList = document.querySelector('#nav-list');
         menu.addEventListener('click', () => {
@@ -40,71 +177,6 @@
             menu.classList.toggle('is-active');
         });
     </script>
-    
-        <section class="intro">
-            <h1>VeriComms</h1>
-        </section>
-
-        <section class="content-row">
-            <div class="text-side">
-                <p>Science to People is building VeriComms, a purpose-built LLM platform designed to maximize the impact of public health communicators working under tight deadlines
-                    and budgets. Functioning as a content assistant and trusted thought partner, VeriComms enables the production of high-quality, science-based messaging
-                    in a fraction of the time. By combining a domain-specific architecture grounded in vetted medical sources and human-in-the-loop safeguards,
-                    this tool ensures that teams can scale their output rapidly without sacrificing scientific integrity or trust.</p>
-
-                <div style="display: flex; gap: 20px; margin-top: 40px;">
-                    <div style="flex: 1; margin-top: 20px;">
-                        <strong>Problem:</strong><br>
-                        Public health communicators face a critical trust gap when using AI, as they cannot risk accuracy or public accountability for the sake of speed.
-                        Current workflows are often too rigid to handle the complex approval processes and authoritative sourcing necessary for sensitive, culturally diverse messaging.
-                        <br><br>
-                        <strong>My Role:</strong><br>
-                        I operated as the lead Solutions Architect and embedded technical partner, influencing system-level decisions that informed deliverables across multiple teams. 
-                        My insight validated that architectural considerations were accounted for at every stage, establishing a solid foundation for a successful MVP. 
-                        I provided holistic QA and system modeling, preserving product viability despite developer-side blockers.
-                    </div>
-                <div style="flex: 1;">
-                    <img src="vericomms/landing.png" height="450" alt="Landing Page">
-                </div>
-            </div>
-        
-                <div style="display: flex; gap: 20px; margin-top: 40px;">
-                    <div style="flex: 1;">
-                        <img src="vericomms/content-studio.png" height="400" alt="Content Studio">
-                    </div>
-                <div style="flex: 1; margin-top: 50px;">
- <strong>Contributions and Key Insights:</strong>
-                        <ul>
-                            <li>Bridged the knowledge gap for UX/Product teams by translating the developer tech stack and machine learning processes, enabling them to design features that better leverage impact.</li>
-                            <li>Advised against generative imagery to maintain scientific accuracy, prevent misinformation, and uphold product credibility.</li>
-                            <li>Supported UX research via data collection and provided multidisciplinary feedback on prototype design and functionality.</li>
-                        </ul>
-                </div>
-            </div>
-
-            <div style="display: flex; gap: 20px; margin-top: 40px;">
-                    <div style="flex: 1; margin-top: 50px;">
-                        <strong>Outcomes:</strong>
-                        <ul>
-                            <li>Founder leveraged our user persona and market positioning insights to strengthen their narrative,
-                                directly supporting conversations with funders and institutional partners.</li>
-                            <li>Utilization of journey mapping and a high-fidelity prototype streamlined the feature prioritization and provided actionable UX recommendations
-                                for the current development build.</li>
-                            <li>Validated hypothesis that communicators seek AI to simplify science documentation rather than replace creativity, 
-                            serving as the central pillar of their product strategy.</li>
-                    </div>
-                <div style="flex: 1;">
-                    <img src="vericomms/sources.png" height="450" alt="Sources and Citations">
-                </div>
-            </div>
-
-
-                        </ul>
-        </main>
-
-    <footer>
-        <p>&copy; 2026 Kris Rubiano. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
